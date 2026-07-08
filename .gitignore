@@ -1,0 +1,25 @@
+# macOS files
+.DS_Store
+
+# IDE files
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+
+# PHP dependencies
+vendor/
+
+# Environment files
+.env
+
+# Moodle generated files
+moodledata/
+
+# Cache
+cache/
