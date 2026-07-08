@@ -1,0 +1,60 @@
+<div class="local-trainingstats-dashboard">
+
+    <h2>{{#str}}trainingstats, local_trainingstats{{/str}}</h2>
+
+
+    {{#empty}}
+        <div class="alert alert-info">
+            {{empty}}
+        </div>
+    {{/empty}}
+
+
+    {{^empty}}
+
+        <table class="generaltable">
+
+            <thead>
+                <tr>
+                    <th scope="col">
+                        {{coursename}}
+                    </th>
+
+                    <th scope="col">
+                        {{enrolledusers}}
+                    </th>
+
+                    <th scope="col">
+                        {{completionpercentage}}
+                    </th>
+                </tr>
+            </thead>
+
+
+            <tbody>
+
+                {{#courses}}
+
+                    <tr>
+                        <td>
+                            {{name}}
+                        </td>
+
+                        <td>
+                            {{users}}
+                        </td>
+
+                        <td>
+                            {{completion}}%
+                        </td>
+                    </tr>
+
+                {{/courses}}
+
+            </tbody>
+
+        </table>
+
+    {{/empty}}
+
+</div>
